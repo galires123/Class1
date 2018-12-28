@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="driverType" value="chrome" />
+	<test thread-count="5" name="Test">
+	    <parameter name="user2" value="standard_user" />
+	    <parameter name="pass2" value="555" />
+		<parameter name="user1" value="standard_user" />
+		<parameter name="pass1" value="111" />
+		<parameter name="user1" value="standard_user222" />
+		<parameter name="pass1" value="222" />
+		<parameter name="user1" value="standard_user333" />
+		<parameter name="pass1" value="333" />
+		<classes>
+			<class name="tests.LoginTest" />
+			<class name="tests.AddToCartTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
